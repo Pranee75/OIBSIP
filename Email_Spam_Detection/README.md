@@ -29,7 +29,7 @@ It helps in filtering unwanted SMS and demonstrates practical applications of **
 
 ---
 
-## 🧹 Preprocessing / Data Cleaning
+## Preprocessing / Data Cleaning
 Steps applied to prepare text data:
 1. Convert text to lowercase  
 2. Remove punctuation & non-alphabetic characters  
@@ -41,21 +41,21 @@ Cleaned text is stored in `clean_text_new` for training.
 
 ---
 
-## 🛠 Feature Extraction / Engineering
+## Feature Extraction / Engineering
 - Use **TF-IDF Vectorization** to convert text into numerical features  
 - Include **unigrams (single words) and bigrams (word pairs)**  
 - Limit features to **top 5000** to reduce noise and improve efficiency
 
 ---
 
-## 🤖 Model / Algorithm Used
+## Model / Algorithm Used
 - **Classifier:** Multinomial Naive Bayes  
 - Handles **text classification** well and is efficient with high-dimensional sparse data  
 - **Train/Test Split:** 80% train, 20% test
 
 ---
 
-## 📊 Evaluation / Results
+## Evaluation / Results
 - **Accuracy:** ~98%  
 - Confusion matrix and classification report included  
 
@@ -65,32 +65,9 @@ Cleaned text is stored in `clean_text_new` for training.
 
 ---
 
-## 💡 Prediction / Usage
+## Prediction / Usage
 Predict new messages using the function:
 
 ```python
 predict_message_improved("Congratulations! You won a $5000 gift card. Reply NOW!")
-Returns "spam" or "ham".
-
----
-
-## ⚙ How to Run / Installation
-
-1. **Install dependencies**:
-```bash
-pip install -r requirements.txt
-
-Download NLTK datasets:
-import nltk
-nltk.download('stopwords')
-nltk.download('wordnet')
-
-Run the Notebook:
-
-Open spam_detection.ipynb in Jupyter Notebook or Jupyter Lab
-Run all cells from top to bottom
-
-For predicting new messages:
-predict_message_improved("Your message here")
-
 
